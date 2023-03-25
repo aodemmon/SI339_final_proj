@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hobbies</title>
+</head>
+<body>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="professional.html">Professional</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Hobbies!</h1>
+    <h2>Climbing, Esports, Guitar</h2>
+
+    <main class = "gallery">
+        <a href = "images/andrews_inn.PNG" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
+            <img src="images/andrews_inn.PNG" width = "200" alt="sign that reads 'andrew's inn'">
+        </a>
+        <a href = "images/appa.jpg" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
+            <img src="images/appa.jpg"  width = "200" alt="appa sipping bison juice (starbucks)">
+        </a>
+        <a href = "images/businesscasual.PNG" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
+            <img src="images/businesscasual.PNG" width = "200" alt="RADER party">
+        </a>
+        <a href = "images/sunset.PNG" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
+            <img src="images/sunset.PNG" width = "200" alt="key west sunset over sunset key">
+        </a>
+        <a href = "images/gymkitty.PNG" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">    
+            <img src="images/gymkitty.PNG" width = "200" alt="kitty in climbing gym">
+        </a>
+        <a href = "images/fergus.jpg" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
+        <img src="images/fergus.jpg" alt="fergus on my boots">
+        </a>
+        <a href = "images/v4dyno.PNG" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
+            <img src="images/v4dyno.PNG" alt="orange v4 boulder at Dyno">
+        </a>
+        <a href = "images/v6green.PNG" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
+            <img src="images/v6green.PNG" alt="green v6 at Planet Rock">
+        </a>
+        <a href = "images/dyno.PNG" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
+            <img src="images/dyno.PNG" alt="purple v6 boulder at Dyno">
+        </a>
+
+        <div>
+            <h3 id = "skip" class = "placeholder">(Skip content placeholder)</h3>
+        </div>
+    </main>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 1000,
+            'wrapAround': true
+        })
+    </script>
+</body>
+</html>
