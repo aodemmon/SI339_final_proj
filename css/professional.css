@@ -1,0 +1,32 @@
+.resumeAndCL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    padding: 100px 200px;
+    background-color: beige;
+    color: rgb(0, 0, 0);
+    border: solid black 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#internship {
+    background-color: beige;
+    border: solid black 5px;
+}
+
+#interntitle {
+    border-bottom: solid black 3px;
+}
+
+#interact {
+    font-size: large;
+}
+  

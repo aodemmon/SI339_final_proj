@@ -2,75 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="Welcome to Professional Development" name="description"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/professional.css">
     <title>Professional Development</title>
 </head>
 <body>
-    <a class = "skip" href="#skip">Skip to Main Content</a>
+    
+    <a class = "skip" id="skiphere" tabindex = "0" href="#skip" style="visibility:hidden;">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="don.html">Don</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="professional.html">Professional</a></li>
+                <li><a href="professional.html" class = "active">Professional</a></li>
+                <li><a href="don.html">Don</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>Professional History</h1>
-    <h2>Amazon : Software Development Engineering Intern</h2>
-    <h2>May 8, 2022 - July 29, 2022</h2>
-    <h3>Seattle, WA</h3>
-    <h4>
-        Worked closely with a mentor on an internal back-end service deployed through AWS
-    </h4>
-    <h4>
-        Python / SQL / AWS Lambda, Redshift –  Connected to a Redshift cluster by calling SQL statements in Python via Lambda functions
-    </h4>
-    <h4>
-        Deployed and maintained version set control via AWS Pipeline 
-    </h4>
+    <div id ="internship">
+        <h1 id="interntitle">Internship Experience</h1>
+        <h2>Amazon : Software Development Engineering Intern</h2>
+        <h2>May 8, 2022 - July 29, 2022</h2>
+        <h3>Seattle, WA</h3>
+        <p>
+            Worked closely with a mentor on an internal back-end service deployed through AWS
+        </p>
+        <p>
+            Python / SQL / AWS Lambda, Redshift –  Connected to a Redshift cluster by calling SQL statements in Python via Lambda functions
+        </p>
+        <p>
+            Deployed and maintained version set control via AWS Pipeline 
+        </p>
+    </div>
 
-    <main class = "gallery">
-        <a href = "images/sitBack.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/sitBack.png" alt="Learn To Sit Back And Observe. Not Everything Needs A Reaction.">
-        </a>
-        <a href = "images/lowForYou.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/lowForYou.png" width = "200" alt="This Is Low Even For You -Smith">
-        </a>
-        <a href = "images/startDialogue.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/startDialogue.png"  width = "200" alt="We Are Going To Start A Dialogue.">
-        </a>
-        <a href = "images/saveMeASpot.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/saveMeASpot.png" width = "200" alt="Save Me A Spot -JR Smith">
-        </a>
-        <a href = "images/illBeThere.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/illBeThere.png" width = "200" alt="I Will Be There No Matter What -Mbappe">
-        </a>
-        <a href = "images/suspended.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">    
-            <img src="images/suspended.png" width = "200" alt="If I Say What I Think I'll Be Suspended Six Months. Arteta">
-        </a>
-        <a href = "images/imBack.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/imBack.png" alt="Im Back -Jordan">
-        </a>
-        <a href = "images/flippingBurgers.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/flippingBurgers.png" alt="That Brother Should Be Flipping Burgers -Westbrook">
-        </a>
-        <a href = "images/noHelp.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/noHelp.png" alt="LeNeHelp">
-        </a>
-        <div>
-            <h3 id = "skip" class = "placeholder">(Skip content placeholder)</h3>
-        </div>
-    </main>
+    <div id="interact">
+        <p>Click on the buttons below to load my current resume and cover letter on new webpages</p>
+    </div>
+
+    <div class = "resumeAndCL">
+        <button id="resume">Resume</button>
+        <button id="CL">Cover Letter</button>
+    </div>
     <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script src="js/professional.js"></script>
     <script>
         lightbox.option({
             'resizeDuration': 1000,
             'wrapAround': true
         })
+    </script>
+    <script>
+        function showDiv() {
+          var skipper = document.getElementById("skiphere");
+          skipper.style.visibility = "visible";
+        }
+        
+        var skipper = document.getElementById("skiphere");
+        skipper.addEventListener("focus", function() {
+          skipper.style.visibility = "visible";
+        });
     </script>
 </body>
 </html>

@@ -2,65 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="Paying homage to Don Africano" name="description"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <title>Don Africano</title>
 </head>
 <body>
-    <a class = "skip" href="#skip">Skip to Main Content</a>
+    <a class = "skip" id="skiphere" tabindex = "0" href="#skip" style="visibility:hidden;">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="don.html">Don</a></li>
+                <li><a href="index.html" tabindex = "1">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="professional.html">Professional</a></li>
+                <li><a href="don.html" class = "active">Don</a></li>
             </ul>
         </nav>
     </header>
+    <div class ="header-don" id = "header-don">
+        <h1>Don Africano</h1>
+        <h2>You might be asking yourself, who is that guy?</h2>
+    </div>
+    
+    <div id="description">
+        <h2>Allow me to briefly explain. Some of his close friends refer to him as the "King of Fraudulency" for no other reason than to get him pressed about not being a fraud. I'm not entirely convinced he fits under that category. Even though he's kind of recluse, he's a funny guy and tends to be loved by all. He always has the best image responses to send to people, and here is a small selection of them I have hand picked.</h2>
+    </div>
 
-    <h1>RIP my friend Don Africano</h1>
-    <h2>He's not dead, bro just needs a good rest.</h2>
-
-    <main class = "gallery">
-        <a href = "images/sitBack.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/sitBack.png" alt="Learn To Sit Back And Observe. Not Everything Needs A Reaction.">
-        </a>
-        <a href = "images/lowForYou.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/lowForYou.png" width = "200" alt="This Is Low Even For You -Smith">
-        </a>
-        <a href = "images/startDialogue.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/startDialogue.png"  width = "200" alt="We Are Going To Start A Dialogue.">
-        </a>
-        <a href = "images/saveMeASpot.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/saveMeASpot.png" width = "200" alt="Save Me A Spot -JR Smith">
-        </a>
-        <a href = "images/illBeThere.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/illBeThere.png" width = "200" alt="I Will Be There No Matter What -Mbappe">
-        </a>
-        <a href = "images/suspended.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">    
-            <img src="images/suspended.png" width = "200" alt="If I Say What I Think I'll Be Suspended Six Months. Arteta">
-        </a>
-        <a href = "images/imBack.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/imBack.png" alt="Im Back -Jordan">
-        </a>
-        <a href = "images/flippingBurgers.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/flippingBurgers.png" alt="That Brother Should Be Flipping Burgers -Westbrook">
-        </a>
-        <a href = "images/noHelp.png" target="_blank" data-lightbox="first" data-title="title" data-alt="alt">
-            <img src="images/noHelp.png" alt="LeNeHelp">
-        </a>
-
-        <div>
-            <h3 id = "skip" class = "placeholder">(Skip content placeholder)</h3>
+    <main class = "main"></main>
+    <div>
+        <h3 id = "skip" class = "placeholder">Don's infamous galleria of responses</h3>
+    </div>
+        <div class = "gallery1">
+            <div class="grid-don">
+                <a href = "images/sitBack.png" target="_blank" data-lightbox="first" data-title="Idris Elba" data-alt="Learn To Sit Back And Observe. Not Everything Needs A Reaction.">
+                    <img src="images/sitBack.png" alt="Learn To Sit Back And Observe. Not Everything Needs A Reaction.">
+                    <div class="overlay" onclick="blurImage(this)"></div>
+                </a>
+            </div>
+            <div class="grid-don">
+                <a href = "images/lowForYou.png" target="_blank" data-lightbox="first" data-title="-Smith" data-alt="This Is Low Even For You -Smith">
+                    <img src="images/lowForYou.png" width = "200" alt="This Is Low Even For You -Smith">
+                    <div class="overlay" onclick="blurImage(this)"></div>
+                </a>
+            </div>
+            <div class="grid-don">
+                <a href = "images/startDialogue.png" target="_blank" data-lightbox="first" data-title="It's time." data-alt="We Are Going To Start A Dialogue.">
+                    <img src="images/startDialogue.png"  width = "200" alt="We Are Going To Start A Dialogue.">
+                    <div class="overlay" onclick="blurImage(this)"></div>
+                </a>
+            </div>
         </div>
-    </main>
+
+        <div id="story">
+            <h2>
+                Oftentimes with few words, the pictures tell a compelling story.
+            </h2>
+        </div>
+
+        <div class="gallery2">
+            <div class="grid-don">
+                <a href = "images/saveMeASpot.png" target="_blank" data-lightbox="second" data-title="JR Smith" data-alt="Save Me A Spot -JR Smith">
+                    <img src="images/saveMeASpot.png" width = "200" alt="Save Me A Spot -JR Smith">
+                    <div class="overlay" onclick="blurImage(this)"></div>
+                </a>
+            </div>
+            <div class="grid-don">
+                <a href = "images/illBeThere.png" target="_blank" data-lightbox="second" data-title="Mbappe" data-alt="I Will Be There No Matter What -Mbappe">
+                    <img src="images/illBeThere.png" width = "200" alt="I Will Be There No Matter What -Mbappe">
+                    <div class="overlay" onclick="blurImage(this)"></div>
+                </a>
+            </div>
+            <div class="grid-don">
+                <a href = "images/suspended.png" target="_blank" data-lightbox="second" data-title="Arteta" data-alt="If I Say What I Think I'll Be Suspended Six Months. Arteta">    
+                    <img src="images/suspended.png" width = "200" alt="If I Say What I Think I'll Be Suspended Six Months. Arteta">
+                    <div class="overlay" onclick="blurImage(this)"></div>
+                </a>
+            </div>
+        </div>
+
+        <div id="story">
+            <h2>
+                True versatility to be seen on all fronts.
+            </h2>
+        </div>
+
+        <div class="gallery3">
+            <div class="grid-don">
+                <a href = "images/imBack.png" target="_blank" data-lightbox="third" data-title="Michael Jordan" data-alt="Im Back -Jordan">
+                    <img src="images/imBack.png" alt="Im Back -Jordan">
+                    <div class="overlay" onclick="blurImage(this)"></div>
+                </a>
+            </div>
+            <div class="grid-don">
+                <a href = "images/flippingBurgers.png" target="_blank" data-lightbox="third" data-title="Russel Westbrook" data-alt="That Brother Should Be Flipping Burgers -Westbrook">
+                    <img src="images/flippingBurgers.png" alt="That Brother Should Be Flipping Burgers -Westbrook">
+                    <div class="overlay" onclick="blurImage(this)"></div>
+                </a>
+            </div>
+            <div class="grid-don">
+                <a href = "images/noHelp.png" target="_blank" data-lightbox="third" data-title="LeNoHelp James" data-alt="LeNeHelp">
+                    <img src="images/noHelp.png" alt="LeNeHelp">
+                    <div class="overlay" onclick="blurImage(this)"></div>
+                </a>
+            </div>
+        </div>
+
+        <div id="story">
+            <h2>
+                Sometimes, I think he converses with himself using only pictures like these. True story.
+            </h2>
+        </div>
+
+    </main> 
+</body>
     <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        function blurImage(overlay) {
+			const imageContainer = overlay.parentNode;
+			imageContainer.classList.add('blur');
+		}
+    </script>
     <script>
         lightbox.option({
             'resizeDuration': 1000,
             'wrapAround': true
         })
+    </script>
+    <script>
+        function showDiv() {
+          var skipper = document.getElementById("skiphere");
+          skipper.style.visibility = "visible";
+        }
+        
+        var skipper = document.getElementById("skiphere");
+        skipper.addEventListener("focus", function() {
+          skipper.style.visibility = "visible";
+        });
     </script>
 </body>
 </html>
